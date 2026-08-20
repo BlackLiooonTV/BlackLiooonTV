@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlackLiooonTV</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background: linear-gradient(
+                135deg,
+                #8ed8ff 0%,
+                #4da9e8 45%,
+                #123c78 100%
+            );
+
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 520px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+
+            border: 4px solid rgba(255, 255, 255, 0.85);
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.2);
+
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .bio {
+            margin: 12px 0 30px;
+            line-height: 1.6;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link {
+            display: block;
+            padding: 17px 20px;
+
+            background: rgba(255, 255, 255, 0.92);
+            color: #123c78;
+
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 8px 20px rgba(0, 0, 0, 0.12);
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .link:hover {
+            transform: translateY(-3px);
+
+            background: white;
+
+            box-shadow:
+                0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 18px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .profile-picture {
+                width: 105px;
+                height: 105px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Profilbild -->
+        <img
+            src="profilbild.jpg"
+            alt="Profilbild von Dein Name"
+            class="profile-picture"
+        >
+
+        <!-- Name -->
+        <h1>Dein Name</h1>
+
+        <!-- Beschreibung -->
+        <p class="bio">
+            Willkommen auf meiner Seite 👋<br>
+            Hier findest du meine Social-Media-Profile.
+        </p>
+
+        <!-- Social-Media-Links -->
+        <div class="links">
+
+            <a
+                href="https://www.instagram.com/DEINNAME/"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@DEINNAME"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                TikTok
+            </a>
+
+            <a
+                href="https://www.youtube.com/@DEINNAME"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                YouTube
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/DEINNAME/"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+        </div>
+
+        <!-- Rechtliche Hinweise -->
+        <div class="footer">
+            <a href="datenschutz.html">Datenschutz</a>
+            &nbsp; · &nbsp;
+            <a href="impressum.html">Impressum</a>
+        </div>
+
+    </main>
+
+</body>
+</html>
